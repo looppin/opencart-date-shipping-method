@@ -11,8 +11,8 @@ class ModelExtensionShippingDate extends Model {
 
         foreach( $lastDays as $day )
         {
-            $quote_data['date_'.$day["day"]] = array(
-                'code'         => 'date.'.$day["date"],
+            $quote_data['date_'.$day["date"]] = array(
+                'code'         => 'date.date_'.$day["date"],
                 'title'        => $this->language->get('text_description') . ' ' . $day["day"],
                 'cost'         => 5.00,
                 'tax_class_id' => 0,
