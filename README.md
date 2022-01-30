@@ -4,6 +4,8 @@ With this application, you can add a delivery date to your Shipping method. If u
 
 ![checkout page](https://github.com/looppin/opencart-date-shipping-method/blob/main/example.jpeg?raw=true)
 
+![checkout page](https://github.com/looppin/opencart-date-shipping-method/blob/main/example2.png?raw=true)
+
 Created by Berk Soroğlu <br>
 e-mail : berksoroglu@gmail.com
 
