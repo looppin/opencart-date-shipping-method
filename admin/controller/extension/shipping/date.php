@@ -66,6 +66,12 @@ class ControllerExtensionShippingDate extends Controller {
 			$data['shipping_date_sort_order'] = $this->config->get('shipping_date_sort_order');
 		}
 
+		if (isset($this->request->post['shipping_date_delivery_price'])) {
+			$data['shipping_date_delivery_price'] = $this->request->post['shipping_date_delivery_price'];
+		} else {
+			$data['shipping_date_delivery_price'] = $this->config->get('shipping_date_delivery_price');
+		}
+
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
