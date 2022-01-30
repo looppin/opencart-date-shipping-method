@@ -14,9 +14,9 @@ class ModelExtensionShippingDate extends Model {
             $quote_data['date_'.$day["date"]] = array(
                 'code'         => 'date.date_'.$day["date"],
                 'title'        => $this->language->get('text_description') . ' ' . $day["day"],
-                'cost'         => 5.00,
+                'cost'         => $this->config->get('shipping_date_delivery_price'),
                 'tax_class_id' => 0,
-                'text'         => $this->currency->format(5.00, $this->session->data['currency'])
+                'text'         => $this->currency->format($this->config->get('shipping_date_delivery_price'), $this->session->data['currency'])
             );
         }
 
